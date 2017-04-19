@@ -11,7 +11,9 @@
 		8E82F2B81EA7C38000EB76E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B71EA7C38000EB76E5 /* ViewController.swift */; };
 		8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2B91EA7C38000EB76E5 /* Main.storyboard */; };
 		8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */; };
-		8E82F2C01EA7C38000EB76E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BE1EA7C38000EB76E5 /* LaunchScreen.storyboard */; };
+		8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */; };
+		8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */; };
+		8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +22,10 @@
 		8E82F2B71EA7C38000EB76E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E82F2BA1EA7C38000EB76E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8E82F2BF1EA7C38000EB76E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ViewControllers/SplashViewController.swift; sourceTree = "<group>"; };
+		8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAEmitterParticuleAnimation.swift; path = Animations/CAEmitterParticuleAnimation.swift; sourceTree = "<group>"; };
+		8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8E82F2CF1EA7C61C00EB76E5 /* Extensions */,
+				8E82F2CA1EA7C58700EB76E5 /* Animations */,
+				8E82F2C71EA7C43000EB76E5 /* ViewControllers */,
 				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
-				8E82F2B71EA7C38000EB76E5 /* ViewController.swift */,
 				8E82F2B91EA7C38000EB76E5 /* Main.storyboard */,
 				8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */,
-				8E82F2BE1EA7C38000EB76E5 /* LaunchScreen.storyboard */,
 				8E82F2C11EA7C38000EB76E5 /* Info.plist */,
 			);
 			path = CookpadPhotoViewer;
+			sourceTree = "<group>";
+		};
+		8E82F2C71EA7C43000EB76E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E82F2B71EA7C38000EB76E5 /* ViewController.swift */,
+				8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E82F2CA1EA7C58700EB76E5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		8E82F2CF1EA7C61C00EB76E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					8E82F2B11EA7C38000EB76E5 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5GARSM38JL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E82F2C01EA7C38000EB76E5 /* LaunchScreen.storyboard in Resources */,
 				8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */,
 				8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
+				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
+				8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift in Sources */,
 				8E82F2B81EA7C38000EB76E5 /* ViewController.swift in Sources */,
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
 			);
@@ -150,14 +183,6 @@
 				8E82F2BA1EA7C38000EB76E5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8E82F2BE1EA7C38000EB76E5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E82F2BF1EA7C38000EB76E5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GARSM38JL;
 				INFOPLIST_FILE = CookpadPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aymenworks.CookpadPhotoViewer;
@@ -270,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GARSM38JL;
 				INFOPLIST_FILE = CookpadPhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aymenworks.CookpadPhotoViewer;

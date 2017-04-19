@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AD7476209C9717835990C6C /* Pods_CookpadPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1E4AA75EF57DF6DC11C288 /* Pods_CookpadPhotoViewer.framework */; };
 		8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */; };
-		8E82F2B81EA7C38000EB76E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B71EA7C38000EB76E5 /* ViewController.swift */; };
+		8E82F2B81EA7C38000EB76E5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */; };
 		8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2B91EA7C38000EB76E5 /* Main.storyboard */; };
 		8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */; };
 		8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */; };
@@ -18,9 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1E4AA75EF57DF6DC11C288 /* Pods_CookpadPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookpadPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C3300752008CA8E37E2127 /* Pods-CookpadPhotoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPhotoViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer.release.xcconfig"; sourceTree = "<group>"; };
 		8E82F2B21EA7C38000EB76E5 /* CookpadPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookpadPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E82F2B71EA7C38000EB76E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		8E82F2BA1EA7C38000EB76E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAEmitterParticleAnimation.swift; path = Animations/CAEmitterParticleAnimation.swift; sourceTree = "<group>"; };
 		8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 		8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationController.swift; path = ViewControllers/BaseNavigationController.swift; sourceTree = "<group>"; };
+		D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPhotoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD7476209C9717835990C6C /* Pods_CookpadPhotoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29D329A1C0F3ABB307705C6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */,
+				56C3300752008CA8E37E2127 /* Pods-CookpadPhotoViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83B5DDA501BA838A8857356A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E4AA75EF57DF6DC11C288 /* Pods_CookpadPhotoViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E82F2A91EA7C38000EB76E5 = {
 			isa = PBXGroup;
 			children = (
 				8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */,
 				8E82F2B31EA7C38000EB76E5 /* Products */,
+				29D329A1C0F3ABB307705C6B /* Pods */,
+				83B5DDA501BA838A8857356A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */,
-				8E82F2B71EA7C38000EB76E5 /* ViewController.swift */,
+				8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */,
 				8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */,
 			);
 			name = ViewControllers;
@@ -112,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E82F2C41EA7C38000EB76E5 /* Build configuration list for PBXNativeTarget "CookpadPhotoViewer" */;
 			buildPhases = (
+				40BFE712C5981476A7216FD2 /* [CP] Check Pods Manifest.lock */,
 				8E82F2AE1EA7C38000EB76E5 /* Sources */,
 				8E82F2AF1EA7C38000EB76E5 /* Frameworks */,
 				8E82F2B01EA7C38000EB76E5 /* Resources */,
+				214E7FD2C280939887A89830 /* [CP] Embed Pods Frameworks */,
+				300F1BC920816F520BE517F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		214E7FD2C280939887A89830 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		300F1BC920816F520BE517F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40BFE712C5981476A7216FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E82F2AE1EA7C38000EB76E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,7 +256,7 @@
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
 				8E82F2D41EA7CBDC00EB76E5 /* BaseNavigationController.swift in Sources */,
 				8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift in Sources */,
-				8E82F2B81EA7C38000EB76E5 /* ViewController.swift in Sources */,
+				8E82F2B81EA7C38000EB76E5 /* ExploreViewController.swift in Sources */,
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +368,7 @@
 		};
 		8E82F2C51EA7C38000EB76E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5GARSM38JL;
@@ -306,6 +382,7 @@
 		};
 		8E82F2C61EA7C38000EB76E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C3300752008CA8E37E2127 /* Pods-CookpadPhotoViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5GARSM38JL;
@@ -336,6 +413,7 @@
 				8E82F2C61EA7C38000EB76E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

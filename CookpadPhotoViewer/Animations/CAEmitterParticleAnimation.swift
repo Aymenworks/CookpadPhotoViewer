@@ -1,5 +1,5 @@
 //
-//  CAEmitterParticuleAnimation.swift
+//  CAEmitterParticleAnimation.swift
 //  CookpadPhotoViewer
 //
 //  Created by Rebouh Aymen on 19/04/2017.
@@ -9,11 +9,11 @@
 import UIKit
 
 // Animation inspired a lot lot from https://github.com/sudeepag/SAConfettiView.
-struct CAEmitterParticuleAnimation {
+struct CAEmitterParticleAnimation {
     
     // MARK: - Properties
     
-    private static var shared = CAEmitterParticuleAnimation()
+    private static var shared = CAEmitterParticleAnimation()
     
     let fruitAndVegetablesImages = [#imageLiteral(resourceName: "broccoli"), #imageLiteral(resourceName: "cherry"), #imageLiteral(resourceName: "chicken-leg"), #imageLiteral(resourceName: "fried-egg"), #imageLiteral(resourceName: "grapes"), #imageLiteral(resourceName: "lobster"),
                                     #imageLiteral(resourceName: "meat"), #imageLiteral(resourceName: "orange"), #imageLiteral(resourceName: "cheese"), #imageLiteral(resourceName: "pear"), #imageLiteral(resourceName: "pizza"), #imageLiteral(resourceName: "strawberry"), #imageLiteral(resourceName: "watermelon"),

@@ -12,7 +12,7 @@
 		8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2B91EA7C38000EB76E5 /* Main.storyboard */; };
 		8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */; };
 		8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */; };
-		8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */; };
+		8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */; };
 		8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ViewControllers/SplashViewController.swift; sourceTree = "<group>"; };
-		8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAEmitterParticuleAnimation.swift; path = Animations/CAEmitterParticuleAnimation.swift; sourceTree = "<group>"; };
+		8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAEmitterParticleAnimation.swift; path = Animations/CAEmitterParticleAnimation.swift; sourceTree = "<group>"; };
 		8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 		8E82F2CA1EA7C58700EB76E5 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift */,
+				8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			files = (
 				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
-				8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticuleAnimation.swift in Sources */,
+				8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift in Sources */,
 				8E82F2B81EA7C38000EB76E5 /* ViewController.swift in Sources */,
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
 			);

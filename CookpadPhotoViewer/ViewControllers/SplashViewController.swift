@@ -13,7 +13,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        CAEmitterParticuleAnimation.animate(inView: self.view, duration: 0.3)
+        CAEmitterParticleAnimation.animate(inView: self.view, duration: 0.3)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.performSegue(withIdentifier: "showApp", sender: self)
         }

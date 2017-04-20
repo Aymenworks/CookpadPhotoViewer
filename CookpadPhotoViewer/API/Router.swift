@@ -25,15 +25,15 @@ enum Router {
     case getDesserts
     //case post([String: Any]) -- example of another use
 
-    static let baseURL = URL(string: "https://api.500px.com/photos/search?consumer_key=x5547uTw3cIbyGNT8P8L2E2gQxthtPUDqvLXVmEC")!
+    static let baseURL = URL(string: "https://api.500px.com/v1/photos/search?consumer_key=x5547uTw3cIbyGNT8P8L2E2gQxthtPUDqvLXVmEC&image_size=600")!
     
     var url: URL { return Router.baseURL.appendingPathComponent(route.path) }
     
     var route: (path: String, parameters: [String: Any]?, method: HTTPMethod) {
         switch self {
-        case .getStarters: return ("", ["tag": "dessert", "sort": "rating"], .get)
-        case .getMainCourses: return ("", ["tag": "dessert", "sort": "rating"], .get)
-        case .getDesserts: return ("", ["tag": "dessert", "sort": "rating"], .get)
+        case .getStarters: return ("", ["tag": "soup"], .get)
+        case .getMainCourses: return ("", ["tag": "meat", "sort": "comments_count"], .get)
+        case .getDesserts: return ("", ["tag": "dessert", "sort": "comments_count"], .get)
         //case .post(let parameters): return ("", parameters, .post) -- example of another use
         }
     }

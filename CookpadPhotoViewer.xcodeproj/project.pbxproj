@@ -12,6 +12,15 @@
 		8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0664921EA7FB8100327DF3 /* MealCell.swift */; };
 		8E0664951EA7FBB400327DF3 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0664941EA7FBB400327DF3 /* MealCell.xib */; };
 		8E2F90DE1EA8C0E4005CAD32 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90DD1EA8C0E4005CAD32 /* Router.swift */; };
+		8E2F90E01EA90D7B005CAD32 /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90DF1EA90D7B005CAD32 /* PhotosAPI.swift */; };
+		8E2F90E41EA911FD005CAD32 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90E31EA911FD005CAD32 /* Photo.swift */; };
+		8E2F90E71EA915C5005CAD32 /* SwinjectStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90E61EA915C5005CAD32 /* SwinjectStoryboardExtension.swift */; };
+		8E2F90E91EA9164D005CAD32 /* PhotosNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90E81EA9164D005CAD32 /* PhotosNetwork.swift */; };
+		8E2F90EB1EA9165C005CAD32 /* PhotosMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90EA1EA9165C005CAD32 /* PhotosMock.swift */; };
+		8E2F90EE1EA91959005CAD32 /* getDesserts.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F90ED1EA91958005CAD32 /* getDesserts.json */; };
+		8E2F90F11EA930F2005CAD32 /* getMainCourses.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F90EF1EA930F2005CAD32 /* getMainCourses.json */; };
+		8E2F90F21EA930F2005CAD32 /* getStarters.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E2F90F01EA930F2005CAD32 /* getStarters.json */; };
+		8E2F90F41EA93531005CAD32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90F31EA93531005CAD32 /* UIColorExtension.swift */; };
 		8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3311EA89EF900A12E48 /* Animable.swift */; };
 		8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */; };
 		8E7CA3371EA8A23F00A12E48 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */; };
@@ -31,6 +40,15 @@
 		8E0664921EA7FB8100327DF3 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = Views/MealCell/MealCell.swift; sourceTree = "<group>"; };
 		8E0664941EA7FBB400327DF3 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = Views/MealCell/MealCell.xib; sourceTree = "<group>"; };
 		8E2F90DD1EA8C0E4005CAD32 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = API/Router.swift; sourceTree = "<group>"; };
+		8E2F90DF1EA90D7B005CAD32 /* PhotosAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosAPI.swift; path = API/PhotosAPI.swift; sourceTree = "<group>"; };
+		8E2F90E31EA911FD005CAD32 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = Models/Photo.swift; sourceTree = "<group>"; };
+		8E2F90E61EA915C5005CAD32 /* SwinjectStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboardExtension.swift; path = DependencyInjection/SwinjectStoryboardExtension.swift; sourceTree = "<group>"; };
+		8E2F90E81EA9164D005CAD32 /* PhotosNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosNetwork.swift; path = API/PhotosNetwork.swift; sourceTree = "<group>"; };
+		8E2F90EA1EA9165C005CAD32 /* PhotosMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosMock.swift; path = API/PhotosMock.swift; sourceTree = "<group>"; };
+		8E2F90ED1EA91958005CAD32 /* getDesserts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = getDesserts.json; path = API/Mocks/getDesserts.json; sourceTree = "<group>"; };
+		8E2F90EF1EA930F2005CAD32 /* getMainCourses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = getMainCourses.json; path = API/Mocks/getMainCourses.json; sourceTree = "<group>"; };
+		8E2F90F01EA930F2005CAD32 /* getStarters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = getStarters.json; path = API/Mocks/getStarters.json; sourceTree = "<group>"; };
+		8E2F90F31EA93531005CAD32 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		8E7CA3311EA89EF900A12E48 /* Animable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animable.swift; path = Animations/Animable.swift; sourceTree = "<group>"; };
 		8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VegetableAnimation.swift; path = Animations/AnimationType/VegetableAnimation.swift; sourceTree = "<group>"; };
 		8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ViewControllers/AboutViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +116,38 @@
 			isa = PBXGroup;
 			children = (
 				8E2F90DD1EA8C0E4005CAD32 /* Router.swift */,
+				8E2F90DF1EA90D7B005CAD32 /* PhotosAPI.swift */,
+				8E2F90E81EA9164D005CAD32 /* PhotosNetwork.swift */,
+				8E2F90EA1EA9165C005CAD32 /* PhotosMock.swift */,
+				8E2F90EC1EA9193E005CAD32 /* Mocks */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		8E2F90E11EA911DE005CAD32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E2F90E31EA911FD005CAD32 /* Photo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8E2F90E51EA91546005CAD32 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				8E2F90E61EA915C5005CAD32 /* SwinjectStoryboardExtension.swift */,
+			);
+			name = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		8E2F90EC1EA9193E005CAD32 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E2F90F01EA930F2005CAD32 /* getStarters.json */,
+				8E2F90EF1EA930F2005CAD32 /* getMainCourses.json */,
+				8E2F90ED1EA91958005CAD32 /* getDesserts.json */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 		8E7CA3331EA89F7700A12E48 /* AnimationType */ = {
@@ -131,8 +179,10 @@
 		8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				8E2F90DC1EA8C0A8005CAD32 /* API */,
+				8E2F90E51EA91546005CAD32 /* DependencyInjection */,
 				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
+				8E2F90DC1EA8C0A8005CAD32 /* API */,
+				8E2F90E11EA911DE005CAD32 /* Models */,
 				8E0664911EA7FB1D00327DF3 /* Views */,
 				8E82F2D21EA7CA3D00EB76E5 /* ViewModels */,
 				8E82F2CF1EA7C61C00EB76E5 /* Extensions */,
@@ -167,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */,
+				8E2F90F31EA93531005CAD32 /* UIColorExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -243,6 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0664951EA7FBB400327DF3 /* MealCell.xib in Resources */,
+				8E2F90EE1EA91959005CAD32 /* getDesserts.json in Resources */,
+				8E2F90F21EA930F2005CAD32 /* getStarters.json in Resources */,
+				8E2F90F11EA930F2005CAD32 /* getMainCourses.json in Resources */,
 				8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */,
 				8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */,
 			);
@@ -303,12 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2F90F41EA93531005CAD32 /* UIColorExtension.swift in Sources */,
 				8E2F90DE1EA8C0E4005CAD32 /* Router.swift in Sources */,
+				8E2F90E01EA90D7B005CAD32 /* PhotosAPI.swift in Sources */,
+				8E2F90EB1EA9165C005CAD32 /* PhotosMock.swift in Sources */,
 				8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */,
 				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
+				8E2F90E71EA915C5005CAD32 /* SwinjectStoryboardExtension.swift in Sources */,
 				8E82F2D41EA7CBDC00EB76E5 /* BaseNavigationController.swift in Sources */,
+				8E2F90E41EA911FD005CAD32 /* Photo.swift in Sources */,
 				8E82F2B81EA7C38000EB76E5 /* ExploreViewController.swift in Sources */,
+				8E2F90E91EA9164D005CAD32 /* PhotosNetwork.swift in Sources */,
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
 				8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */,
 				8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */,

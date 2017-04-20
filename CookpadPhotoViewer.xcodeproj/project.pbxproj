@@ -11,6 +11,7 @@
 		8E0664901EA7F96D00327DF3 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06648F1EA7F96D00327DF3 /* ExploreViewModel.swift */; };
 		8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0664921EA7FB8100327DF3 /* MealCell.swift */; };
 		8E0664951EA7FBB400327DF3 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0664941EA7FBB400327DF3 /* MealCell.xib */; };
+		8E2F90DE1EA8C0E4005CAD32 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F90DD1EA8C0E4005CAD32 /* Router.swift */; };
 		8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3311EA89EF900A12E48 /* Animable.swift */; };
 		8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */; };
 		8E7CA3371EA8A23F00A12E48 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */; };
@@ -29,12 +30,13 @@
 		8E06648F1EA7F96D00327DF3 /* ExploreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewModel.swift; path = ViewModels/ExploreViewModel.swift; sourceTree = "<group>"; };
 		8E0664921EA7FB8100327DF3 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = Views/MealCell/MealCell.swift; sourceTree = "<group>"; };
 		8E0664941EA7FBB400327DF3 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = Views/MealCell/MealCell.xib; sourceTree = "<group>"; };
+		8E2F90DD1EA8C0E4005CAD32 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = API/Router.swift; sourceTree = "<group>"; };
 		8E7CA3311EA89EF900A12E48 /* Animable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animable.swift; path = Animations/Animable.swift; sourceTree = "<group>"; };
 		8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VegetableAnimation.swift; path = Animations/AnimationType/VegetableAnimation.swift; sourceTree = "<group>"; };
 		8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ViewControllers/AboutViewController.swift; sourceTree = "<group>"; };
 		8E82F2B21EA7C38000EB76E5 /* CookpadPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookpadPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = ViewControllers/ExploreViewController.swift; sourceTree = "<group>"; };
 		8E82F2BA1EA7C38000EB76E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		8E2F90DC1EA8C0A8005CAD32 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8E2F90DD1EA8C0E4005CAD32 /* Router.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		8E7CA3331EA89F7700A12E48 /* AnimationType */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8E2F90DC1EA8C0A8005CAD32 /* API */,
 				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
 				8E0664911EA7FB1D00327DF3 /* Views */,
 				8E82F2D21EA7CA3D00EB76E5 /* ViewModels */,
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2F90DE1EA8C0E4005CAD32 /* Router.swift in Sources */,
 				8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */,
 				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
@@ -416,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5GARSM38JL;
-				INFOPLIST_FILE = CookpadPhotoViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CookpadPhotoViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aymenworks.CookpadPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,7 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5GARSM38JL;
-				INFOPLIST_FILE = CookpadPhotoViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CookpadPhotoViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aymenworks.CookpadPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

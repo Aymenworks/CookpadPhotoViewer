@@ -1,12 +1,15 @@
 PODS:
+  - Alamofire (4.4.0)
   - GlidingCollection (1.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - GlidingCollection
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   GlidingCollection: 2469c90a15cf43b61290a5418da3faec26cc96e9
 
-PODFILE CHECKSUM: 13acd8c5ba00d73ae9223dc10383fbeb405bbbd3
+PODFILE CHECKSUM: abb223f589d9386480c61d0e8f9a67802f4365cf
 
 COCOAPODS: 1.2.0

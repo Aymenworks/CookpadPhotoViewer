@@ -11,12 +11,14 @@
 		8E0664901EA7F96D00327DF3 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06648F1EA7F96D00327DF3 /* ExploreViewModel.swift */; };
 		8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0664921EA7FB8100327DF3 /* MealCell.swift */; };
 		8E0664951EA7FBB400327DF3 /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0664941EA7FBB400327DF3 /* MealCell.xib */; };
+		8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3311EA89EF900A12E48 /* Animable.swift */; };
+		8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */; };
+		8E7CA3371EA8A23F00A12E48 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */; };
 		8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */; };
 		8E82F2B81EA7C38000EB76E5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */; };
 		8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2B91EA7C38000EB76E5 /* Main.storyboard */; };
 		8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */; };
 		8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */; };
-		8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */; };
 		8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */; };
 		8E82F2D41EA7CBDC00EB76E5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -27,14 +29,16 @@
 		8E06648F1EA7F96D00327DF3 /* ExploreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewModel.swift; path = ViewModels/ExploreViewModel.swift; sourceTree = "<group>"; };
 		8E0664921EA7FB8100327DF3 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealCell.swift; path = Views/MealCell/MealCell.swift; sourceTree = "<group>"; };
 		8E0664941EA7FBB400327DF3 /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MealCell.xib; path = Views/MealCell/MealCell.xib; sourceTree = "<group>"; };
+		8E7CA3311EA89EF900A12E48 /* Animable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animable.swift; path = Animations/Animable.swift; sourceTree = "<group>"; };
+		8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VegetableAnimation.swift; path = Animations/AnimationType/VegetableAnimation.swift; sourceTree = "<group>"; };
+		8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ViewControllers/AboutViewController.swift; sourceTree = "<group>"; };
 		8E82F2B21EA7C38000EB76E5 /* CookpadPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookpadPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		8E82F2BA1EA7C38000EB76E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ViewControllers/SplashViewController.swift; sourceTree = "<group>"; };
-		8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAEmitterParticleAnimation.swift; path = Animations/CAEmitterParticleAnimation.swift; sourceTree = "<group>"; };
 		8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 		8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationController.swift; path = ViewControllers/BaseNavigationController.swift; sourceTree = "<group>"; };
 		D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPhotoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,10 +76,28 @@
 		8E0664911EA7FB1D00327DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8E82F2B91EA7C38000EB76E5 /* Main.storyboard */,
 				8E0664921EA7FB8100327DF3 /* MealCell.swift */,
 				8E0664941EA7FBB400327DF3 /* MealCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		8E2F90DB1EA8BFB5005CAD32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E82F2C11EA7C38000EB76E5 /* Info.plist */,
+				8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E7CA3331EA89F7700A12E48 /* AnimationType */ = {
+			isa = PBXGroup;
+			children = (
+				8E7CA3341EA89F8B00A12E48 /* VegetableAnimation.swift */,
+			);
+			name = AnimationType;
 			sourceTree = "<group>";
 		};
 		8E82F2A91EA7C38000EB76E5 = {
@@ -99,15 +121,13 @@
 		8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
 				8E0664911EA7FB1D00327DF3 /* Views */,
 				8E82F2D21EA7CA3D00EB76E5 /* ViewModels */,
 				8E82F2CF1EA7C61C00EB76E5 /* Extensions */,
 				8E82F2CA1EA7C58700EB76E5 /* Animations */,
 				8E82F2C71EA7C43000EB76E5 /* ViewControllers */,
-				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
-				8E82F2B91EA7C38000EB76E5 /* Main.storyboard */,
-				8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */,
-				8E82F2C11EA7C38000EB76E5 /* Info.plist */,
+				8E2F90DB1EA8BFB5005CAD32 /* Resources */,
 			);
 			path = CookpadPhotoViewer;
 			sourceTree = "<group>";
@@ -118,6 +138,7 @@
 				8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */,
 				8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */,
 				8E82F2B71EA7C38000EB76E5 /* ExploreViewController.swift */,
+				8E7CA3361EA8A23F00A12E48 /* AboutViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -125,7 +146,8 @@
 		8E82F2CA1EA7C58700EB76E5 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				8E82F2CD1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift */,
+				8E7CA3331EA89F7700A12E48 /* AnimationType */,
+				8E7CA3311EA89EF900A12E48 /* Animable.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -274,9 +296,11 @@
 				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
 				8E82F2D41EA7CBDC00EB76E5 /* BaseNavigationController.swift in Sources */,
-				8E82F2CE1EA7C5E400EB76E5 /* CAEmitterParticleAnimation.swift in Sources */,
 				8E82F2B81EA7C38000EB76E5 /* ExploreViewController.swift in Sources */,
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
+				8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */,
+				8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */,
+				8E7CA3371EA8A23F00A12E48 /* AboutViewController.swift in Sources */,
 				8E0664901EA7F96D00327DF3 /* ExploreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

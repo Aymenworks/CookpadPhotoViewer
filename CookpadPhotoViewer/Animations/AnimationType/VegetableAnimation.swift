@@ -10,7 +10,7 @@ import UIKit
 
 struct VegetableAnimation: Animable {
     
-    var orientation: Double = M_PI
+    var orientation: Double = .pi
     var size = CGSize(width: UIScreen.main.bounds.size.width, height: 1)
     var position: CGPoint = CGPoint(x: UIScreen.main.bounds.width/2.0, y: 0)
     var emissionRange: CGFloat = CGFloat(M_PI_4)

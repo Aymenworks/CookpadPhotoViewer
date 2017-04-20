@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QMc-E2-xmo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QMc-E2-xmo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +32,7 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="My name is ">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="17" name="SFUIText-Regular"/>
                                                             <font key="NSOriginalFont" size="17" name="SFUIText-Regular"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -40,7 +40,7 @@
                                                     </fragment>
                                                     <fragment content="Aymen Rebouh">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="17" name="SFUIText-Regular"/>
                                                             <font key="NSOriginalFont" size="17" name="SFUIText-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -52,7 +52,7 @@
 I’m currently a french computer science student in Sandwich course switching 
 between school and company every month from September 2014 to September 2017 where I work as an iOS  developer at the company.</string>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="17" name="SFUIText-Regular"/>
                                                             <font key="NSOriginalFont" size="17" name="SFUIText-Regular"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -68,7 +68,7 @@ between school and company every month from September 2014 to September 2017 whe
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Know more →">
-                                                    <color key="titleColor" red="0.95294117649999999" green="0.49019607840000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="highlighted">
                                                     <color key="titleColor" red="0.9993975759" green="0.665681839" blue="0.227565825" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,7 +94,7 @@ between school and company every month from September 2014 to September 2017 whe
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6Ur-jE-DQb" secondAttribute="trailing" id="3W8-4H-NKe"/>
                             <constraint firstItem="6Ur-jE-DQb" firstAttribute="top" secondItem="34j-ob-fF9" secondAttribute="top" id="H1e-R9-LKE"/>
@@ -109,18 +109,18 @@ between school and company every month from September 2014 to September 2017 whe
                                 <rect key="frame" x="16" y="-10" width="357" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVs-pY-r2N">
-                                        <rect key="frame" x="0.0" y="20" width="343" height="43"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="d26-XP-1Ur">
+                                        <rect key="frame" x="0.0" y="20" width="200" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="aNv-ZX-cXu"/>
+                                            <constraint firstAttribute="width" constant="200" id="uMx-KI-DvY"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AVs-pY-r2N" secondAttribute="trailing" constant="14" id="62S-Rb-g22"/>
-                                    <constraint firstItem="AVs-pY-r2N" firstAttribute="leading" secondItem="tsy-m3-FEL" secondAttribute="leading" id="hnw-Xx-hPl"/>
-                                    <constraint firstAttribute="bottom" secondItem="AVs-pY-r2N" secondAttribute="bottom" id="leX-Ul-XAo"/>
+                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="centerY" secondItem="tsy-m3-FEL" secondAttribute="centerY" constant="20" id="JMC-NZ-t8v"/>
+                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="leading" secondItem="tsy-m3-FEL" secondAttribute="leading" id="Wla-QI-NRQ"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
@@ -145,10 +145,10 @@ between school and company every month from September 2014 to September 2017 whe
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgm-nv-zb6" customClass="GlidingCollection" customModule="GlidingCollection">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sgm-nv-zb6" firstAttribute="leading" secondItem="M5G-fH-mbx" secondAttribute="leading" id="9za-Ee-WEq"/>
                             <constraint firstAttribute="trailing" secondItem="sgm-nv-zb6" secondAttribute="trailing" id="UtE-WL-UoQ"/>
@@ -163,18 +163,18 @@ between school and company every month from September 2014 to September 2017 whe
                                 <rect key="frame" x="16" y="-10" width="357" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the Cookpad Photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-bP-yEI">
-                                        <rect key="frame" x="0.0" y="20" width="343" height="86"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="p4t-Gz-VlE">
+                                        <rect key="frame" x="0.0" y="20" width="200" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="j9k-X8-7Hs"/>
+                                            <constraint firstAttribute="height" constant="63" id="mtu-hq-BI4"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ne8-bP-yEI" firstAttribute="top" secondItem="kne-pX-7wD" secondAttribute="top" constant="20" id="Lx1-1m-dkh"/>
-                                    <constraint firstAttribute="trailing" secondItem="ne8-bP-yEI" secondAttribute="trailing" constant="14" id="Xf2-hT-AbB"/>
-                                    <constraint firstItem="ne8-bP-yEI" firstAttribute="leading" secondItem="kne-pX-7wD" secondAttribute="leading" id="yH7-TJ-eWO"/>
+                                    <constraint firstItem="p4t-Gz-VlE" firstAttribute="leading" secondItem="kne-pX-7wD" secondAttribute="leading" id="Cag-2C-gdX"/>
+                                    <constraint firstItem="p4t-Gz-VlE" firstAttribute="centerY" secondItem="kne-pX-7wD" secondAttribute="centerY" constant="20" id="jdN-P1-0jm"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
@@ -196,6 +196,7 @@ between school and company every month from September 2014 to September 2017 whe
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.20392156859999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8rF-dc-opx" kind="relationship" relationship="viewControllers" id="sGe-Bl-ahe"/>
@@ -235,7 +236,7 @@ between school and company every month from September 2014 to September 2017 whe
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AZE-cF-ab4" firstAttribute="centerX" secondItem="aw3-nA-0Mi" secondAttribute="centerX" id="Kcm-vC-0Pr"/>
                             <constraint firstItem="pqE-VA-CoP" firstAttribute="centerX" secondItem="aw3-nA-0Mi" secondAttribute="centerX" id="h5K-B6-yl1"/>
@@ -251,11 +252,11 @@ between school and company every month from September 2014 to September 2017 whe
             </objects>
             <point key="canvasLocation" x="-700" y="37"/>
         </scene>
-        <!--Explore-->
+        <!--Base Navigation Controller-->
         <scene sceneID="zxs-V4-7mk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8rF-dc-opx" customClass="BaseNavigationController" customModule="CookpadPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="FAS-xt-3bW"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="FAS-xt-3bW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a2w-Og-Mmk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -270,11 +271,11 @@ between school and company every month from September 2014 to September 2017 whe
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="-301.79910044977515"/>
         </scene>
-        <!--Photos-->
+        <!--Base Navigation Controller-->
         <scene sceneID="JV3-As-zu7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmb-Xf-1mH" customClass="BaseNavigationController" customModule="CookpadPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Photos" id="wei-8x-EP1"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="wei-8x-EP1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Len-ue-nf7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

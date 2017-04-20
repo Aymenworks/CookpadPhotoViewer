@@ -18,12 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupGlidingCollection()
         
+        UITabBar.appearance().tintColor = .cookpadBrown
         return true
     }
 
     private func setupGlidingCollection() {
-        GlidingConfig.shared.buttonsFont = UIFont.boldSystemFont(ofSize: 26)
-        GlidingConfig.shared.activeButtonColor = UIColor(red: 52/255, green: 0, blue: 0, alpha: 1.0)
+        GlidingConfig.shared.buttonsFont = UIFont.boldSystemFont(ofSize: 30)
+        GlidingConfig.shared.activeButtonColor = .cookpadBrown
         GlidingConfig.shared.inactiveButtonsColor = GlidingConfig.shared.activeButtonColor
     }
 

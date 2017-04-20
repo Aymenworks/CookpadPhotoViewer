@@ -8,13 +8,18 @@
 
 import UIKit
 import GlidingCollection
+import Alamofire
+import RxSwift
+import RxCocoa
+import Haneke
 
 class ExploreViewController: UIViewController {
 
     // MARK: - Properties -
     
     @IBOutlet weak var glidingCollection: GlidingCollection!
-    var viewModel = ExploreViewModel()
+    var viewModel: ExploreViewModel!
+    let disposeBag = DisposeBag()
     
     struct MealCellProperties {
         static let identifier = "MealCell"
@@ -26,6 +31,20 @@ class ExploreViewController: UIViewController {
         super.viewDidLoad()
         
         setupGlidingCollection()
+        bindViewModel()
+        
+        viewModel.getStarters()
+        viewModel.getMainCourses()
+        viewModel.getDesserts()
+    }
+    
+    private func bindViewModel() {
+        Observable.merge([viewModel.starters.asObservable(), viewModel.mainCourses.asObservable(), viewModel.desserts.asObservable()])
+            .filter { !$0.isEmpty }
+            .subscribe(onNext: { _ in
+                print("reload")
+                self.glidingCollection.reloadData()
+            }).addDisposableTo(disposeBag)
     }
     
     // MARK: - User Interface -
@@ -59,15 +78,24 @@ extension ExploreViewController: GlidingCollectionDatasource {
 extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        switch glidingCollection.expandedItemIndex {
+        case 0: return viewModel.starters.value.count
+        case 1: return viewModel.mainCourses.value.count
+        case 2: return viewModel.desserts.value.count
+        default: return 0
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MealCellProperties.identifier, for: indexPath) as! MealCell
-
-        cell.imageView.image = UIImage(named: "dessertSample")
         cell.setup()
 
+        let photo = viewModel.photoUrlFor(section: glidingCollection.expandedItemIndex, atIndex: indexPath.row)
+        
+        if let url = URL(string: photo.url) {
+            cell.imageView.hnk_setImageFromURL(url, placeholder: photo.placeholder)
+        }
+        
         return cell
     }
 }

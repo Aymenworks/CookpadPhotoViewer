@@ -20,7 +20,7 @@
                     <view key="view" contentMode="scaleToFill" id="34j-ob-fF9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dUI-po-40z">
@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1896.8" y="389.95502248875567"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore View Controller-->
         <scene sceneID="wuV-m1-LYo">
             <objects>
-                <viewController id="Dlx-ni-VxY" sceneMemberID="viewController">
+                <viewController id="Dlx-ni-VxY" customClass="ExploreViewController" customModule="CookpadPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EvS-mX-RF4"/>
                         <viewControllerLayoutGuide type="bottom" id="o2c-Bm-cYD"/>
@@ -62,7 +62,19 @@
                     <view key="view" contentMode="scaleToFill" id="M5G-fH-mbx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgm-nv-zb6" customClass="GlidingCollection" customModule="GlidingCollection">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sgm-nv-zb6" firstAttribute="leading" secondItem="M5G-fH-mbx" secondAttribute="leading" id="9za-Ee-WEq"/>
+                            <constraint firstAttribute="trailing" secondItem="sgm-nv-zb6" secondAttribute="trailing" id="UtE-WL-UoQ"/>
+                            <constraint firstItem="o2c-Bm-cYD" firstAttribute="top" secondItem="sgm-nv-zb6" secondAttribute="bottom" id="gnc-kS-kPZ"/>
+                            <constraint firstItem="sgm-nv-zb6" firstAttribute="top" secondItem="EvS-mX-RF4" secondAttribute="bottom" id="tVp-sD-UIQ"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="WCc-xl-p9H">
@@ -88,6 +100,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="glidingCollection" destination="sgm-nv-zb6" id="0P4-Mc-yuK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rco-Bp-2dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,7 +155,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AZE-cF-ab4" firstAttribute="centerX" secondItem="aw3-nA-0Mi" secondAttribute="centerX" id="Kcm-vC-0Pr"/>
                             <constraint firstItem="pqE-VA-CoP" firstAttribute="centerX" secondItem="aw3-nA-0Mi" secondAttribute="centerX" id="h5K-B6-yl1"/>

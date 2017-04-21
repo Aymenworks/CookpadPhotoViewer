@@ -8,6 +8,7 @@
 
 import UIKit
 import GlidingCollection
+import Haneke
 
 class MealCell: UICollectionViewCell {
     
@@ -17,11 +18,15 @@ class MealCell: UICollectionViewCell {
     
     // MARK: - User Appareance -
     
-    func setup() {
+    func setupWith(photo: (url: String, placeholder: UIImage)) {
         contentView.clipsToBounds = true
         layer.shadowOffset = GlidingConfig.shared.cardShadowOffset
         layer.shadowColor = GlidingConfig.shared.cardShadowColor.cgColor
         layer.shadowOpacity = GlidingConfig.shared.cardShadowOpacity
         layer.shadowRadius = GlidingConfig.shared.cardShadowRadius
+        
+        if let url = URL(string: photo.url) {
+            imageView.hnk_setImageFromURL(url, placeholder: photo.placeholder)
+        }
     }
 }

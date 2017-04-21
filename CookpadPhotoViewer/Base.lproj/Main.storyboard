@@ -134,7 +134,7 @@ between school and company every month from September 2014 to September 2017 whe
         <!--Explore View Controller-->
         <scene sceneID="wuV-m1-LYo">
             <objects>
-                <viewController id="Dlx-ni-VxY" customClass="ExploreViewController" customModule="CookpadPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExploreViewController" id="Dlx-ni-VxY" customClass="ExploreViewController" customModule="CookpadPhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EvS-mX-RF4"/>
                         <viewControllerLayoutGuide type="bottom" id="o2c-Bm-cYD"/>
@@ -191,7 +191,7 @@ between school and company every month from September 2014 to September 2017 whe
         <!--Tab Bar Controller-->
         <scene sceneID="Ci9-9W-Ha9">
             <objects>
-                <tabBarController id="mdS-Xr-Zpf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="mdS-Xr-Zpf" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="t0J-mW-RBV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

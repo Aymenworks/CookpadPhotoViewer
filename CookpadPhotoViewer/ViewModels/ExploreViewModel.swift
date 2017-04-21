@@ -77,12 +77,22 @@ struct ExploreViewModel {
     
     // MARK: - Utils -
     
+    func numberOfPhotosFor(section: Int) -> Int {
+        switch section {
+            case 0: return starters.value.count
+            case 1: return mainCourses.value.count
+            case 2: return desserts.value.count
+            default: return 0
+        }
+    }
+
+    
     func photoUrlFor(section: Int, atIndex index: Int) -> (url: String, placeholder: UIImage) {
         switch section {
-        case 0: return (starters.value[index].url, placeholderStarter)
-        case 1: return (mainCourses.value[index].url, placeholderMainCourse)
-        case 2: return (desserts.value[index].url, placeholderDessert)
-        default: return ("", UIImage())
+            case 0: return (starters.value[index].url, placeholderStarter)
+            case 1: return (mainCourses.value[index].url, placeholderMainCourse)
+            case 2: return (desserts.value[index].url, placeholderDessert)
+            default: return ("", UIImage())
         }
     }
 }

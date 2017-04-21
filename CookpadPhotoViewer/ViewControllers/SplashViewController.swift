@@ -18,8 +18,15 @@ class SplashViewController: UIViewController {
         let emitterLayer = animationType.emitter()
         view.layer.addSublayer(emitterLayer)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.performSegue(withIdentifier: "showApp", sender: self)
+        if let tabBarController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController,
+            let navigationController = tabBarController.viewControllers?.first as? BaseNavigationController,
+            let exploreViewController = navigationController.visibleViewController as? ExploreViewController {
+            
+            exploreViewController.fetchData()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.present(tabBarController, animated: true, completion: nil)
+            }
         }
     }
 }

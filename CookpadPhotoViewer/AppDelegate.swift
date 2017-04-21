@@ -27,6 +27,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GlidingConfig.shared.activeButtonColor = .cookpadBrown
         GlidingConfig.shared.inactiveButtonsColor = GlidingConfig.shared.activeButtonColor
     }
-
 }
 

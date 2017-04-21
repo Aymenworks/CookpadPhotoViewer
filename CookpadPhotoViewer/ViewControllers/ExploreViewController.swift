@@ -31,6 +31,11 @@ class ExploreViewController: UIViewController {
         super.viewDidLoad()
         
         setupGlidingCollection()
+        
+        self.glidingCollection.reloadData()
+    }
+    
+    func fetchData() {
         bindViewModel()
         
         viewModel.getStarters()
@@ -40,7 +45,7 @@ class ExploreViewController: UIViewController {
     
     private func bindViewModel() {
         Observable.merge([viewModel.starters.asObservable(), viewModel.mainCourses.asObservable(), viewModel.desserts.asObservable()])
-            .filter { !$0.isEmpty }
+            .filter { !$0.isEmpty && self.glidingCollection != nil }
             .subscribe(onNext: { _ in
                 print("reload")
                 self.glidingCollection.reloadData()
@@ -78,23 +83,13 @@ extension ExploreViewController: GlidingCollectionDatasource {
 extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch glidingCollection.expandedItemIndex {
-        case 0: return viewModel.starters.value.count
-        case 1: return viewModel.mainCourses.value.count
-        case 2: return viewModel.desserts.value.count
-        default: return 0
-        }
+        return viewModel.numberOfPhotosFor(section: glidingCollection.expandedItemIndex)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MealCellProperties.identifier, for: indexPath) as! MealCell
-        cell.setup()
-
         let photo = viewModel.photoUrlFor(section: glidingCollection.expandedItemIndex, atIndex: indexPath.row)
-        
-        if let url = URL(string: photo.url) {
-            cell.imageView.hnk_setImageFromURL(url, placeholder: photo.placeholder)
-        }
+        cell.setupWith(photo: photo)
         
         return cell
     }

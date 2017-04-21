@@ -27,10 +27,13 @@ struct PhotosNetwork: PhotosAPI {
                             do {
                                 let json = value as! NSDictionary
                                 let jsonPhotos = json["photos"]
-                                let photos = try [Photo].decode(jsonPhotos!)
-                                let photosResult: Result<[Photo]> = .success(photos)
-                                observer.onNext(photosResult.value!)
-                            
+                                if let jsonPhotos = jsonPhotos {
+                                    let photos = try [Photo].decode(jsonPhotos)
+                                    let photosResult: Result<[Photo]> = .success(photos)
+                                    observer.onNext(photosResult.value!)
+                                } else {
+                                    observer.onNext([])
+                                }
                             } catch let error {
                                 print(error)
                                 observer.onError(error)
@@ -59,9 +62,13 @@ struct PhotosNetwork: PhotosAPI {
                         do {
                             let json = value as! NSDictionary
                             let jsonPhotos = json["photos"]
-                            let photos = try [Photo].decode(jsonPhotos!)
-                            let photosResult: Result<[Photo]> = .success(photos)
-                            observer.onNext(photosResult.value!)
+                            if let jsonPhotos = jsonPhotos {
+                                let photos = try [Photo].decode(jsonPhotos)
+                                let photosResult: Result<[Photo]> = .success(photos)
+                                observer.onNext(photosResult.value!)
+                            } else {
+                                observer.onNext([])
+                            }
                             
                         } catch let error {
                             print(error)
@@ -92,9 +99,13 @@ struct PhotosNetwork: PhotosAPI {
                         do {
                             let json = value as! NSDictionary
                             let jsonPhotos = json["photos"]
-                            let photos = try [Photo].decode(jsonPhotos!)
-                            let photosResult: Result<[Photo]> = .success(photos)
-                            observer.onNext(photosResult.value!)
+                            if let jsonPhotos = jsonPhotos {
+                                let photos = try [Photo].decode(jsonPhotos)
+                                let photosResult: Result<[Photo]> = .success(photos)
+                                observer.onNext(photosResult.value!)
+                            } else {
+                                observer.onNext([])
+                            }
                             
                         } catch let error {
                             print(error)

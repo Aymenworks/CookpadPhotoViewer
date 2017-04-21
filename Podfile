@@ -11,4 +11,5 @@ target 'CookpadPhotoViewer' do
   pod 'SwinjectStoryboard', '~> 1.0.0'
   pod 'Decodable'
   pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift', :branch => 'feature/swift-3'
+  pod 'Hero'
 end

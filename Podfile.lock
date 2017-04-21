@@ -3,6 +3,7 @@ PODS:
   - Decodable (0.5)
   - GlidingCollection (1.0.1)
   - HanekeSwift (0.10.1)
+  - Hero (0.3.6)
   - RxCocoa (3.4.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.4.0)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Decodable
   - GlidingCollection
   - HanekeSwift (from `https://github.com/Haneke/HanekeSwift`, branch `feature/swift-3`)
+  - Hero
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - Swinject (~> 2.0.0)
@@ -35,11 +37,12 @@ SPEC CHECKSUMS:
   Decodable: 7c90acc68d357b71d0d6efc120faf9c53c644b7e
   GlidingCollection: 2469c90a15cf43b61290a5418da3faec26cc96e9
   HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
 
-PODFILE CHECKSUM: d8a7f82b781e5eb7a9a1a316e7d4f320aadf0a07
+PODFILE CHECKSUM: 78a181bdb98156c423e65e43cdc5252a4fc66c11
 
 COCOAPODS: 1.2.0

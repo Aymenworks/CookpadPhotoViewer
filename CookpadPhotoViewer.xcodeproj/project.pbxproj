@@ -34,6 +34,7 @@
 		8E83EAD91EAA323A00B6854B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EAD81EAA323A00B6854B /* UIViewControllerExtension.swift */; };
 		8E83EADD1EAA8C8200B6854B /* PhotoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EADC1EAA8C8200B6854B /* PhotoDetailCell.swift */; };
 		8E83EADF1EAAA5FE00B6854B /* PhotoDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E83EADE1EAAA5FE00B6854B /* PhotoDetailCell.xib */; };
+		8EA945641EAC062600D24D92 /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA945631EAC062600D24D92 /* PhotoDetailViewModel.swift */; };
 		8EE537591EAB9D3200FAF328 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE537581EAB9D3200FAF328 /* DateExtension.swift */; };
 		8EE5375B1EABCA3400FAF328 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5375A1EABCA3400FAF328 /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		8E83EAD81EAA323A00B6854B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		8E83EADC1EAA8C8200B6854B /* PhotoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailCell.swift; path = Views/PhotoDetailCell/PhotoDetailCell.swift; sourceTree = "<group>"; };
 		8E83EADE1EAAA5FE00B6854B /* PhotoDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoDetailCell.xib; path = Views/PhotoDetailCell/PhotoDetailCell.xib; sourceTree = "<group>"; };
+		8EA945631EAC062600D24D92 /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewModel.swift; path = ViewModels/PhotoDetailViewModel.swift; sourceTree = "<group>"; };
 		8EE537581EAB9D3200FAF328 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		8EE5375A1EABCA3400FAF328 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtension.swift; path = Extensions/DateFormatterExtension.swift; sourceTree = "<group>"; };
 		D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPhotoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				8E06648F1EA7F96D00327DF3 /* ExploreViewModel.swift */,
+				8EA945631EAC062600D24D92 /* PhotoDetailViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				8E82F2B61EA7C38000EB76E5 /* AppDelegate.swift in Sources */,
 				8E7CA3321EA89EF900A12E48 /* Animable.swift in Sources */,
 				8E7CA3351EA89F8B00A12E48 /* VegetableAnimation.swift in Sources */,
+				8EA945641EAC062600D24D92 /* PhotoDetailViewModel.swift in Sources */,
 				8E83EAD91EAA323A00B6854B /* UIViewControllerExtension.swift in Sources */,
 				8E7CA3371EA8A23F00A12E48 /* AboutViewController.swift in Sources */,
 				8E0664901EA7F96D00327DF3 /* ExploreViewModel.swift in Sources */,

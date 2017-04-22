@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxDataSources
 
 class PhotoDetailViewController: UIViewController {
     
@@ -16,7 +19,8 @@ class PhotoDetailViewController: UIViewController {
     var photos: [Photo] = []
     var selectedIndex: IndexPath!
     var selectedImage: UIImage!
-
+    let disposeBag = DisposeBag()
+    
     struct PhotoDetailCellInformations {
         static let identifier = "PhotoDetailCell"
     }
@@ -24,9 +28,14 @@ class PhotoDetailViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             let nib = UINib(nibName: String(describing: PhotoDetailCell.self), bundle: nil)
-            collectionView.dataSource = self
             collectionView.register(nib, forCellWithReuseIdentifier: PhotoDetailCellInformations.identifier)
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        bindView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,30 +43,12 @@ class PhotoDetailViewController: UIViewController {
         
         collectionView.scrollToItem(at: selectedIndex, at: .centeredHorizontally, animated: false)
     }
-}
-
-// MARK: - UICollectionViewDataSource -
-
-extension PhotoDetailViewController: UICollectionViewDataSource {
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoDetailCellInformations.identifier, for: indexPath) as! PhotoDetailCell
-        
-        if selectedIndex == indexPath {
-            cell.setupWith(photo: photos[indexPath.row], placeholder: selectedImage)
-        } else {
-            cell.setupWith(photo: photos[indexPath.row], placeholder: placeholder)
-        }
-        return cell
-
+    private func bindView() {
+        Observable<[Photo]>.just(photos)
+            .bind(to: collectionView.rx.items(cellIdentifier: PhotoDetailCellInformations.identifier, cellType: PhotoDetailCell.self)) { index, photo, cell in
+                cell.setupWith(photo: photo, placeholder: self.selectedIndex.row == index ? self.selectedImage : self.placeholder)
+            }.addDisposableTo(disposeBag)
     }
 }
 

@@ -29,12 +29,13 @@
 		8E82F2BB1EA7C38000EB76E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2B91EA7C38000EB76E5 /* Main.storyboard */; };
 		8E82F2BD1EA7C38000EB76E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */; };
 		8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */; };
-		8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */; };
 		8E82F2D41EA7CBDC00EB76E5 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */; };
 		8E83EAD71EAA1F5D00B6854B /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EAD61EAA1F5D00B6854B /* PhotoDetailViewController.swift */; };
 		8E83EAD91EAA323A00B6854B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EAD81EAA323A00B6854B /* UIViewControllerExtension.swift */; };
 		8E83EADD1EAA8C8200B6854B /* PhotoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83EADC1EAA8C8200B6854B /* PhotoDetailCell.swift */; };
 		8E83EADF1EAAA5FE00B6854B /* PhotoDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E83EADE1EAAA5FE00B6854B /* PhotoDetailCell.xib */; };
+		8EE537591EAB9D3200FAF328 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE537581EAB9D3200FAF328 /* DateExtension.swift */; };
+		8EE5375B1EABCA3400FAF328 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5375A1EABCA3400FAF328 /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +64,13 @@
 		8E82F2BC1EA7C38000EB76E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		8E82F2C11EA7C38000EB76E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		8E82F2C81EA7C44500EB76E5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ViewControllers/SplashViewController.swift; sourceTree = "<group>"; };
-		8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 		8E82F2D31EA7CBDC00EB76E5 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationController.swift; path = ViewControllers/BaseNavigationController.swift; sourceTree = "<group>"; };
 		8E83EAD61EAA1F5D00B6854B /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewController.swift; path = ViewControllers/PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		8E83EAD81EAA323A00B6854B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		8E83EADC1EAA8C8200B6854B /* PhotoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailCell.swift; path = Views/PhotoDetailCell/PhotoDetailCell.swift; sourceTree = "<group>"; };
 		8E83EADE1EAAA5FE00B6854B /* PhotoDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoDetailCell.xib; path = Views/PhotoDetailCell/PhotoDetailCell.xib; sourceTree = "<group>"; };
+		8EE537581EAB9D3200FAF328 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
+		8EE5375A1EABCA3400FAF328 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtension.swift; path = Extensions/DateFormatterExtension.swift; sourceTree = "<group>"; };
 		D7981448549C5EE14C05EB54 /* Pods-CookpadPhotoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPhotoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPhotoViewer/Pods-CookpadPhotoViewer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,9 +227,10 @@
 		8E82F2CF1EA7C61C00EB76E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8E82F2D01EA7C63600EB76E5 /* ArrayExtension.swift */,
 				8E2F90F31EA93531005CAD32 /* UIColorExtension.swift */,
 				8E83EAD81EAA323A00B6854B /* UIViewControllerExtension.swift */,
+				8EE537581EAB9D3200FAF328 /* DateExtension.swift */,
+				8EE5375A1EABCA3400FAF328 /* DateFormatterExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -387,11 +390,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E2F90F41EA93531005CAD32 /* UIColorExtension.swift in Sources */,
+				8EE537591EAB9D3200FAF328 /* DateExtension.swift in Sources */,
+				8EE5375B1EABCA3400FAF328 /* DateFormatterExtension.swift in Sources */,
 				8E2F90DE1EA8C0E4005CAD32 /* Router.swift in Sources */,
 				8E2F90E01EA90D7B005CAD32 /* PhotosAPI.swift in Sources */,
 				8E2F90EB1EA9165C005CAD32 /* PhotosMock.swift in Sources */,
 				8E0664931EA7FB8100327DF3 /* MealCell.swift in Sources */,
-				8E82F2D11EA7C63600EB76E5 /* ArrayExtension.swift in Sources */,
 				8E83EAD71EAA1F5D00B6854B /* PhotoDetailViewController.swift in Sources */,
 				8E82F2C91EA7C44500EB76E5 /* SplashViewController.swift in Sources */,
 				8E2F90E71EA915C5005CAD32 /* SwinjectStoryboardExtension.swift in Sources */,

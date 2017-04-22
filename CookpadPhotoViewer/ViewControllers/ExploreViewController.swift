@@ -18,6 +18,7 @@ class ExploreViewController: UIViewController {
 
     // MARK: - Properties -
     
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
     @IBOutlet weak var glidingCollection: GlidingCollection!
     var viewModel: ExploreViewModel!
     let disposeBag = DisposeBag()
@@ -36,35 +37,38 @@ class ExploreViewController: UIViewController {
         self.glidingCollection.reloadData()
     }
     
+
     func fetchData() {
-        bindViewModel()
-        
         viewModel.getStarters()
         viewModel.getMainCourses()
         viewModel.getDesserts()
     }
     
-    private func bindViewModel() {
+    func bindViewModel() {
+        refreshButton.rx
+            .tap
+            .asDriver()
+            .drive(onNext: {
+                self.fetchData()
+            }).addDisposableTo(disposeBag)
+        
         Observable.merge([viewModel.starters.asObservable(), viewModel.mainCourses.asObservable(), viewModel.desserts.asObservable()])
             .filter { !$0.isEmpty && self.glidingCollection != nil }
             .subscribe(onNext: { _ in
-                self.glidingCollection.reloadData()
+                self.glidingCollection.collectionView.reloadData()
             }).addDisposableTo(disposeBag)
     }
     
     // MARK: - User Interface -
     
     private func setupGlidingCollection() {
-        glidingCollection.dataSource = self
-    
         let nib = UINib(nibName: String(describing: MealCell.self), bundle: nil)
         glidingCollection.collectionView.register(nib, forCellWithReuseIdentifier: MealCellProperties.identifier)
         glidingCollection.collectionView.delegate = self
         glidingCollection.collectionView.dataSource = self
         glidingCollection.collectionView.backgroundColor = glidingCollection.backgroundColor
         
-        isHeroEnabled = true
-        glidingCollection.collectionView.heroModifiers = [.cascade]
+        glidingCollection.dataSource = self
     }
 }
 
@@ -92,7 +96,7 @@ extension ExploreViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MealCellProperties.identifier, for: indexPath) as! MealCell
         let photoTuple = viewModel.photoFor(section: glidingCollection.expandedItemIndex, atIndex: indexPath.row)
-        cell.setupWith(model: photoTuple.photo, placeholder: photoTuple.placeholder)
+        cell.setupWith(photo: photoTuple.photo, placeholder: photoTuple.placeholder)
         
         return cell
     }
@@ -102,12 +106,14 @@ extension ExploreViewController: UICollectionViewDataSource {
 
 extension ExploreViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "PhotoDetailViewController") as! PhotoDetailViewController
         let cell = collectionView.cellForItem(at: indexPath) as! MealCell
+
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "PhotoDetailViewController") as! PhotoDetailViewController
         vc.selectedIndex = indexPath
         vc.selectedImage = cell.imageView.image
         vc.placeholder = viewModel.placeholderFor(section: glidingCollection.expandedItemIndex)
         vc.photos = viewModel.photosFor(section: glidingCollection.expandedItemIndex)
+        
         self.present(vc, animated: true, completion: nil)
     }
 }

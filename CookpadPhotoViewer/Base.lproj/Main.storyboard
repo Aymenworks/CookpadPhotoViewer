@@ -26,10 +26,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQn-Xf-7uO" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="372.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="342.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-Hc-JXF">
-                                                <rect key="frame" x="20" y="50" width="335" height="252.5"/>
+                                                <rect key="frame" x="20" y="20" width="335" height="252.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="My name is ">
                                                         <attributes>
@@ -63,7 +63,7 @@ between school and company every month from September 2014 to September 2017 whe
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-P2-Pyl">
-                                                <rect key="frame" x="20" y="322.5" width="100" height="30"/>
+                                                <rect key="frame" x="20" y="292.5" width="100" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MTs-KY-1iz"/>
                                                 </constraints>
@@ -82,7 +82,7 @@ between school and company every month from September 2014 to September 2017 whe
                                             <constraint firstItem="Ned-Hc-JXF" firstAttribute="leading" secondItem="HQn-Xf-7uO" secondAttribute="leading" constant="20" id="YWp-AU-F6Q"/>
                                             <constraint firstAttribute="bottom" secondItem="jnK-P2-Pyl" secondAttribute="bottom" constant="20" id="axA-LC-dBv"/>
                                             <constraint firstItem="jnK-P2-Pyl" firstAttribute="top" secondItem="Ned-Hc-JXF" secondAttribute="bottom" constant="20" id="ip7-Rh-dOm"/>
-                                            <constraint firstItem="Ned-Hc-JXF" firstAttribute="top" secondItem="HQn-Xf-7uO" secondAttribute="top" constant="50" id="tk6-qT-p5W"/>
+                                            <constraint firstItem="Ned-Hc-JXF" firstAttribute="top" secondItem="HQn-Xf-7uO" secondAttribute="top" constant="20" id="tk6-qT-p5W"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -110,18 +110,18 @@ between school and company every month from September 2014 to September 2017 whe
                                 <rect key="frame" x="16" y="-10" width="357" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="d26-XP-1Ur">
-                                        <rect key="frame" x="78.5" y="20" width="200" height="63"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="d26-XP-1Ur">
+                                        <rect key="frame" x="98" y="0.0" width="160" height="63"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="63" id="aNv-ZX-cXu"/>
-                                            <constraint firstAttribute="width" constant="200" id="uMx-KI-DvY"/>
+                                            <constraint firstAttribute="width" constant="160" id="D8t-EO-I2u"/>
+                                            <constraint firstAttribute="height" constant="63" id="QaO-xo-pwM"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="centerY" secondItem="tsy-m3-FEL" secondAttribute="centerY" constant="20" id="JMC-NZ-t8v"/>
-                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="centerX" secondItem="tsy-m3-FEL" secondAttribute="centerX" id="unw-VU-QXk"/>
+                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="top" secondItem="tsy-m3-FEL" secondAttribute="top" id="CIy-c7-cje"/>
+                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="centerX" secondItem="tsy-m3-FEL" secondAttribute="centerX" id="RUp-y7-Z8u"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
@@ -163,28 +163,35 @@ between school and company every month from September 2014 to September 2017 whe
                                 <rect key="frame" x="16" y="-10" width="357" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SCI-i3-4ds">
-                                        <rect key="frame" x="78.5" y="20" width="200" height="63"/>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SCI-i3-4ds">
+                                        <rect key="frame" x="98.5" y="0.0" width="160" height="63"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="63" id="hKe-tY-RHt">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="81"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="200" id="oqJ-vf-Ve6">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="280"/>
-                                            </constraint>
+                                            <constraint firstAttribute="height" constant="63" id="gfY-CF-y6s"/>
+                                            <constraint firstAttribute="width" constant="160" id="lO3-DW-y8A"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cookpadLogo"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc()"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="SCI-i3-4ds" firstAttribute="centerY" secondItem="fMe-0o-RW3" secondAttribute="centerY" constant="20" id="WJM-Qr-iSi"/>
-                                    <constraint firstItem="SCI-i3-4ds" firstAttribute="centerX" secondItem="fMe-0o-RW3" secondAttribute="centerX" id="bvC-Hq-cvT"/>
+                                    <constraint firstItem="SCI-i3-4ds" firstAttribute="centerX" secondItem="fMe-0o-RW3" secondAttribute="centerX" id="ZgB-5s-B4t"/>
+                                    <constraint firstItem="SCI-i3-4ds" firstAttribute="top" secondItem="fMe-0o-RW3" secondAttribute="top" id="cDY-qK-RCP"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Uf1-qX-ROe">
+                            <color key="tintColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="glidingCollection" destination="sgm-nv-zb6" id="0P4-Mc-yuK"/>
+                        <outlet property="refreshButton" destination="Uf1-qX-ROe" id="mnw-bB-HLH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rco-Bp-2dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +231,6 @@ between school and company every month from September 2014 to September 2017 whe
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="poQ-0H-w8n" id="VAs-YN-Gjf"/>
                                     <outlet property="delegate" destination="poQ-0H-w8n" id="3Qy-Dc-QC2"/>
                                 </connections>
                             </collectionView>
@@ -272,6 +278,9 @@ between school and company every month from September 2014 to September 2017 whe
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.20392156859999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="8rF-dc-opx" kind="relationship" relationship="viewControllers" id="sGe-Bl-ahe"/>
                         <segue destination="dmb-Xf-1mH" kind="relationship" relationship="viewControllers" id="Q6G-i1-vNN"/>
@@ -299,6 +308,10 @@ between school and company every month from September 2014 to September 2017 whe
                                     <constraint firstAttribute="height" constant="300" id="86q-tq-vA1"/>
                                     <constraint firstAttribute="width" constant="300" id="px6-QC-fs2"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cookpadLogo"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc()"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Aymen Rebouh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-cF-ab4">
                                 <rect key="frame" x="109" y="626" width="157" height="21"/>
@@ -318,8 +331,11 @@ between school and company every month from September 2014 to September 2017 whe
                             <constraint firstItem="CyZ-XU-nXN" firstAttribute="top" secondItem="AZE-cF-ab4" secondAttribute="bottom" constant="20" id="tBQ-xh-on2"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="mdS-Xr-Zpf" kind="show" identifier="showApp" id="aJ7-57-6DX"/>
+                        <segue destination="mdS-Xr-Zpf" kind="presentation" identifier="showApp" id="aJ7-57-6DX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tn-d3-uBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -338,6 +354,9 @@ between school and company every month from September 2014 to September 2017 whe
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Dlx-ni-VxY" kind="relationship" relationship="rootViewController" id="uOA-a3-oLA"/>
                     </connections>

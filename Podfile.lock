@@ -6,6 +6,9 @@ PODS:
   - Hero (0.3.6)
   - RxCocoa (3.4.0):
     - RxSwift (~> 3.4)
+  - RxDataSources (1.0.3):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
   - RxSwift (3.4.0)
   - Swinject (2.0.0)
   - SwinjectStoryboard (1.0.0):
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - HanekeSwift (from `https://github.com/Haneke/HanekeSwift`, branch `feature/swift-3`)
   - Hero
   - RxCocoa (~> 3.0)
+  - RxDataSources (~> 1.0)
   - RxSwift (~> 3.0)
   - Swinject (~> 2.0.0)
   - SwinjectStoryboard (~> 1.0.0)
@@ -39,10 +43,11 @@ SPEC CHECKSUMS:
   HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
+  RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
 
-PODFILE CHECKSUM: 78a181bdb98156c423e65e43cdc5252a4fc66c11
+PODFILE CHECKSUM: 35781fdcdfb8ca58cc4316e704ac0b66b8603fa1
 
 COCOAPODS: 1.2.0

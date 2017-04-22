@@ -20,9 +20,9 @@ struct ExploreViewModel {
     let error = Variable<Error?>(nil)
     let disposeBag = DisposeBag()
     
-    var starters    = Variable<[Photo]>([])
-    var mainCourses = Variable<[Photo]>([])
-    var desserts    = Variable<[Photo]>([])
+    let starters    = Variable<[Photo]>([])
+    let mainCourses = Variable<[Photo]>([])
+    let desserts    = Variable<[Photo]>([])
     
     let placeholderStarter    = #imageLiteral(resourceName: "placeholderStarter")
     let placeholderMainCourse = #imageLiteral(resourceName: "placeholderMainCourse")
@@ -63,6 +63,8 @@ struct ExploreViewModel {
         .addDisposableTo(self.disposeBag)
     }
     
+    // MARK: - Utils -
+    
     func handleEvent<Item>(event: Event<Item> ,completionHandler: (Item) -> ()) {
         switch event {
         case .next(let response):
@@ -74,8 +76,6 @@ struct ExploreViewModel {
             break
         }
     }
-    
-    // MARK: - Utils -
     
     func numberOfPhotosFor(section: Int) -> Int {
         switch section {

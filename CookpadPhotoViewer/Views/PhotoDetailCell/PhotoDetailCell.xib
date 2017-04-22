@@ -23,18 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0i-zi-Gjr" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="385"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="403.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLu-1W-RdU">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="280"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-ay-qcA">
-                                        <rect key="frame" x="0.0" y="280" width="250" height="105"/>
+                                        <rect key="frame" x="0.0" y="280" width="250" height="123.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-3C-ozd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-3C-ozd">
                                                 <rect key="frame" x="20" y="20" width="210" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                                <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.54901960780000003" green="0.6705882353" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsE-KS-EbP">
@@ -43,11 +43,38 @@
                                                 <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-xo-iDQ">
+                                                <rect key="frame" x="20" y="100" width="210" height="13.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="BY ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="AYMEN REBOUH">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.5490196078431373" green="0.6705882352941176" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" IN APRIL 29, 2017">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="LsE-KS-EbP" firstAttribute="leading" secondItem="Pi8-ay-qcA" secondAttribute="leading" constant="20" id="4ic-A4-0Ja"/>
-                                            <constraint firstAttribute="bottom" secondItem="LsE-KS-EbP" secondAttribute="bottom" constant="20" id="PeU-Uh-Ca5"/>
+                                            <constraint firstItem="hOy-xo-iDQ" firstAttribute="top" secondItem="LsE-KS-EbP" secondAttribute="bottom" constant="15" id="7c0-Tx-czx"/>
+                                            <constraint firstItem="hOy-xo-iDQ" firstAttribute="leading" secondItem="Pi8-ay-qcA" secondAttribute="leading" constant="20" id="MeE-uc-bsI"/>
+                                            <constraint firstAttribute="bottom" secondItem="hOy-xo-iDQ" secondAttribute="bottom" constant="10" id="Mwn-fa-Lmp"/>
+                                            <constraint firstAttribute="trailing" secondItem="hOy-xo-iDQ" secondAttribute="trailing" constant="20" id="S8V-DJ-5vP"/>
                                             <constraint firstAttribute="trailing" secondItem="LsE-KS-EbP" secondAttribute="trailing" constant="20" id="bve-JE-Axq"/>
                                             <constraint firstItem="GR7-3C-ozd" firstAttribute="top" secondItem="Pi8-ay-qcA" secondAttribute="top" constant="20" id="iuf-UA-nNo"/>
                                             <constraint firstItem="LsE-KS-EbP" firstAttribute="top" secondItem="GR7-3C-ozd" secondAttribute="bottom" constant="15" id="lem-PL-aQ3"/>
@@ -88,6 +115,7 @@
             </constraints>
             <size key="customSize" width="145" height="137"/>
             <connections>
+                <outlet property="creationLabel" destination="hOy-xo-iDQ" id="n2O-ck-oSM"/>
                 <outlet property="descriptionLabel" destination="LsE-KS-EbP" id="szm-M2-UwW"/>
                 <outlet property="imageView" destination="BLu-1W-RdU" id="DMM-Ri-qox"/>
                 <outlet property="scrollView" destination="IYM-pE-1N0" id="Put-RO-SBi"/>

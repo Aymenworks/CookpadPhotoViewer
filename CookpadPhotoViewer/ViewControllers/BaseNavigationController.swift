@@ -10,11 +10,12 @@ import UIKit
 
 class BaseNavigationController: UINavigationController {
 
+    // MARK: - Lifecycle -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationBar.shadowImage = UIImage()
         navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
-
 }

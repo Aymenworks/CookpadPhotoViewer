@@ -12,4 +12,5 @@ target 'CookpadPhotoViewer' do
   pod 'Decodable'
   pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift', :branch => 'feature/swift-3'
   pod 'Hero'
+  pod 'RxDataSources', '~> 1.0'
 end

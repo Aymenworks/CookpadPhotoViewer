@@ -18,7 +18,7 @@ class AboutViewController: UIViewController {
         var animationType = VegetableAnimation()
         animationType.position = CGPoint(x: UIScreen.main.bounds.maxX, y: UIScreen.main.bounds.maxY-200)
         animationType.size = CGSize(width: 300, height: 1)
-        animationType.orientation = -M_PI_2
+        animationType.orientation = -Double.pi / 2.0
         animationType.emissionRange = CGFloat(M_1_PI)
 
         let emitterLayer = animationType.emitter()

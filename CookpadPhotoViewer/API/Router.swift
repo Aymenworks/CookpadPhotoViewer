@@ -12,7 +12,7 @@ import Alamofire
 /* 
  Inspired from https://littlebitesofcocoa.com/93-creating-a-router-for-alamofire. I recommand u this website :).
    
- Use like that :
+ Use it like that :
     Alamofire.request(Router.getDesserts)
              .responseJSON { jsonResponse in
              ...
@@ -25,15 +25,15 @@ enum Router {
     case getDesserts
     //case post([String: Any]) -- example of another use
 
-    static let baseURL = URL(string: "https://api.500px.com/v1/photos/search?consumer_key=x5547uTw3cIbyGNT8P8L2E2gQxthtPUDqvLXVmEC&image_size=21&exlude=People,Travel,Transportation,Street,Animals,Commercial,Family")!
+    static let baseURL = URL(string: "https://api.500px.com/v1/photos/search?consumer_key=x5547uTw3cIbyGNT8P8L2E2gQxthtPUDqvLXVmEC&image_size=21&exlude=People,Travel,Transportation,Street,Animals,Commercial,Family&only=food&sort=highest_rating")!
     
     var url: URL { return Router.baseURL.appendingPathComponent(route.path) }
     
     var route: (path: String, parameters: [String: Any]?, method: HTTPMethod) {
         switch self {
-        case .getStarters: return ("", ["tag": "soup", "only": "Food", "sort": "highest_rating"], .get)
-        case .getMainCourses: return ("", ["tag": "meat", "only": "Food", "sort": "highest_rating"], .get)
-        case .getDesserts: return ("", ["tag": "dessert", "only": "Food", "sort": "highest_rating"], .get)
+        case .getStarters: return ("", ["tag": "soup"], .get)
+        case .getMainCourses: return ("", ["tag": "meat"], .get)
+        case .getDesserts: return ("", ["tag": "dessert"], .get)
         //case .post(let parameters): return ("", parameters, .post) -- example of another use
         }
     }

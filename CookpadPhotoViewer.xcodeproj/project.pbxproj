@@ -104,8 +104,8 @@
 		8E0664911EA7FB1D00327DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8E83EADB1EAA8C5300B6854B /* PhotoDetailCell */,
 				8E82F2B91EA7C38000EB76E5 /* Main.storyboard */,
+				8E83EADB1EAA8C5300B6854B /* PhotoDetailCell */,
 				8E83EADA1EAA7A1D00B6854B /* MealCell */,
 			);
 			name = Views;
@@ -187,8 +187,8 @@
 		8E82F2B41EA7C38000EB76E5 /* CookpadPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				8E2F90E51EA91546005CAD32 /* DependencyInjection */,
 				8E82F2B51EA7C38000EB76E5 /* AppDelegate.swift */,
+				8E2F90E51EA91546005CAD32 /* DependencyInjection */,
 				8E2F90DC1EA8C0A8005CAD32 /* API */,
 				8E2F90E11EA911DE005CAD32 /* Models */,
 				8E0664911EA7FB1D00327DF3 /* Views */,

@@ -32,7 +32,7 @@ class PhotoDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        collectionView.scrollToItem(at: selectedIndex, at: .centeredHorizontally, animated: true)
+        collectionView.scrollToItem(at: selectedIndex, at: .centeredHorizontally, animated: false)
     }
 }
 

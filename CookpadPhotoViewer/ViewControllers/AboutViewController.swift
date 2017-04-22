@@ -24,5 +24,11 @@ class AboutViewController: UIViewController {
         let emitterLayer = animationType.emitter()
         view.layer.addSublayer(emitterLayer)
     }
+    
+    // MARK: - User Interaction -
+    
+    @IBAction func showCookpadRecipes(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://cookpad.com/fr/recettes/2429575-tarte-a-la-tomate-fromage-de-chevre-et-jambon")!)
+    }
 
 }

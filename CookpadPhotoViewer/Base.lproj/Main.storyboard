@@ -26,54 +26,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQn-Xf-7uO" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="342.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="427"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-Hc-JXF">
-                                                <rect key="frame" x="20" y="20" width="335" height="252.5"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="My name is ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="17" name="SFUIText-Regular"/>
-                                                            <font key="NSOriginalFont" size="17" name="SFUIText-Regular"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="Aymen Rebouh">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="17" name="SFUIText-Regular"/>
-                                                            <font key="NSOriginalFont" size="17" name="SFUIText-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content"> and I’m interested by an iOS engineering position starting September-October 2017
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-Hc-JXF">
+                                                <rect key="frame" x="20" y="20" width="335" height="337"/>
+                                                <mutableString key="text">My name is Aymen Rebouh and I’m interested by an iOS engineering/design position starting September-October 2017.
 
 I’m currently a french computer science student in Sandwich course switching 
-between school and company every month from September 2014 to September 2017 where I work as an iOS  developer at the company.</string>
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="17" name="SFUIText-Regular"/>
-                                                            <font key="NSOriginalFont" size="17" name="SFUIText-Regular"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+between school and company every month from September 2014 to September 2017 where I work as an iOS  developer at the company.
+
+I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again two times, either with friends or backpacking. And I'll be there again in May 2017 ( next week ) for three weeks for holidays.
+</mutableString>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-P2-Pyl">
-                                                <rect key="frame" x="20" y="292.5" width="100" height="30"/>
+                                                <rect key="frame" x="20" y="377" width="188" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MTs-KY-1iz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="Know more →">
+                                                <state key="normal" title="See my cookpad recipe →">
                                                     <color key="titleColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="highlighted">
                                                     <color key="titleColor" red="0.9993975759" green="0.665681839" blue="0.227565825" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showCookpadRecipes:" destination="oha-tL-QiA" eventType="touchUpInside" id="lDk-Dg-ZHs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

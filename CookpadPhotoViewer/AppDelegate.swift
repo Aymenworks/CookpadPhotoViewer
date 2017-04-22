@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupGlidingCollection()
         
-        UITabBar.appearance().tintColor = .cookpadBrown
+        UITabBar.appearance().tintColor = .cookpadOrange
         return true
     }
 
     private func setupGlidingCollection() {
         GlidingConfig.shared.buttonsFont = UIFont.systemFont(ofSize: 30, weight: UIFontWeightHeavy)
-        GlidingConfig.shared.activeButtonColor = .cookpadOrange
+        GlidingConfig.shared.activeButtonColor = .cookpadBrown
         GlidingConfig.shared.inactiveButtonsColor = GlidingConfig.shared.activeButtonColor
         GlidingConfig.shared.cardsSize = CGSize(width: round(UIScreen.main.bounds.width * 0.7), height: round(UIScreen.main.bounds.height * 0.45))
     }

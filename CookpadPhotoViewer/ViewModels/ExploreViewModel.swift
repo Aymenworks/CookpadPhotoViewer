@@ -14,7 +14,7 @@ struct ExploreViewModel {
     
     // MARK: - Properties -
     
-    let sectionsTitles = ["Starter", "Main Courses", "Dessert"]
+    let sectionsTitles = ["Starters", "Main Courses", "Desserts"]
     
     let service: PhotosAPI
     let error = Variable<Error?>(nil)
@@ -86,13 +86,34 @@ struct ExploreViewModel {
         }
     }
 
+    func photosFor(section: Int) -> [Photo] {
+        if section == 0 {
+            return starters.value
+        } else if section == 1 {
+            return mainCourses.value
+        } else {
+            return desserts.value
+        }
+    }
+
+    func placeholderFor(section: Int) -> UIImage {
+        if section == 0 {
+            return placeholderStarter
+        } else if section == 1 {
+            return placeholderMainCourse
+        } else {
+            return placeholderDessert
+        }
+    }
+
     
-    func photoUrlFor(section: Int, atIndex index: Int) -> (url: String, placeholder: UIImage) {
-        switch section {
-            case 0: return (starters.value[index].url, placeholderStarter)
-            case 1: return (mainCourses.value[index].url, placeholderMainCourse)
-            case 2: return (desserts.value[index].url, placeholderDessert)
-            default: return ("", UIImage())
+    func photoFor(section: Int, atIndex index: Int) -> (photo: Photo, placeholder: UIImage) {
+        if section == 0 {
+            return (starters.value[index], placeholderStarter)
+        } else if section == 1 {
+            return (mainCourses.value[index], placeholderMainCourse)
+        } else {
+            return (desserts.value[index], placeholderDessert)
         }
     }
 }

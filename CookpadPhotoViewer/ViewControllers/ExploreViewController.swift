@@ -12,6 +12,7 @@ import Alamofire
 import RxSwift
 import RxCocoa
 import Haneke
+import Hero
 
 class ExploreViewController: UIViewController {
 
@@ -47,7 +48,6 @@ class ExploreViewController: UIViewController {
         Observable.merge([viewModel.starters.asObservable(), viewModel.mainCourses.asObservable(), viewModel.desserts.asObservable()])
             .filter { !$0.isEmpty && self.glidingCollection != nil }
             .subscribe(onNext: { _ in
-                print("reload")
                 self.glidingCollection.reloadData()
             }).addDisposableTo(disposeBag)
     }
@@ -62,6 +62,9 @@ class ExploreViewController: UIViewController {
         glidingCollection.collectionView.delegate = self
         glidingCollection.collectionView.dataSource = self
         glidingCollection.collectionView.backgroundColor = glidingCollection.backgroundColor
+        
+        isHeroEnabled = true
+        glidingCollection.collectionView.heroModifiers = [.cascade]
     }
 }
 
@@ -88,8 +91,8 @@ extension ExploreViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MealCellProperties.identifier, for: indexPath) as! MealCell
-        let photo = viewModel.photoUrlFor(section: glidingCollection.expandedItemIndex, atIndex: indexPath.row)
-        cell.setupWith(photo: photo)
+        let photoTuple = viewModel.photoFor(section: glidingCollection.expandedItemIndex, atIndex: indexPath.row)
+        cell.setupWith(model: photoTuple.photo, placeholder: photoTuple.placeholder)
         
         return cell
     }
@@ -99,9 +102,12 @@ extension ExploreViewController: UICollectionViewDataSource {
 
 extension ExploreViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        let section = glidingCollection.expandedItemIndex
-        let item = indexPath.item
-        print("#\(item) in section #\(section)")
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "PhotoDetailViewController") as! PhotoDetailViewController
+        let cell = collectionView.cellForItem(at: indexPath) as! MealCell
+        vc.selectedIndex = indexPath
+        vc.selectedImage = cell.imageView.image
+        vc.placeholder = viewModel.placeholderFor(section: glidingCollection.expandedItemIndex)
+        vc.photos = viewModel.photosFor(section: glidingCollection.expandedItemIndex)
+        self.present(vc, animated: true, completion: nil)
     }
 }

@@ -23,9 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func setupGlidingCollection() {
-        GlidingConfig.shared.buttonsFont = UIFont.boldSystemFont(ofSize: 30)
+        GlidingConfig.shared.buttonsFont = UIFont.systemFont(ofSize: 30, weight: UIFontWeightHeavy)
         GlidingConfig.shared.activeButtonColor = .cookpadBrown
         GlidingConfig.shared.inactiveButtonsColor = GlidingConfig.shared.activeButtonColor
+        GlidingConfig.shared.cardsSize = CGSize(width: round(UIScreen.main.bounds.width * 0.7), height: round(UIScreen.main.bounds.height * 0.45))
     }
 }
 

@@ -10,12 +10,18 @@ import Foundation
 import Decodable
 
 struct Photo {
+    let id: Int
+    let name: String?
+    let description: String?
     let url: String
 }
 
 extension Photo: Decodable {
     public static func decode(_ json: Any) throws -> Photo {
         return try Photo(
+            id: json => "id",
+            name: json =>? "name",
+            description: json =>? "description",
             url: json => "image_url"
         )
     }

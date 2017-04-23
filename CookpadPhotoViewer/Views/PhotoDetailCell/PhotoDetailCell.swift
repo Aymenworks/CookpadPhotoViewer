@@ -23,6 +23,7 @@ class PhotoDetailCell: UICollectionViewCell {
     @IBOutlet weak var creationLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     
     // MARK: - User Appareance -
@@ -31,7 +32,8 @@ class PhotoDetailCell: UICollectionViewCell {
         self.photo = photo
         
         titleLabel.text = photo.title?.capitalized
-        descriptionLabel.text = photo.description?.capitalized
+        descriptionTextView.text = photo.description
+
 
         creationLabel.attributedText = viewModel.attributedCreationInformation(from: photo)
         

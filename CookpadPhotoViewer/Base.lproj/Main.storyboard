@@ -28,15 +28,15 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQn-Xf-7uO" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="427"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-Hc-JXF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-Hc-JXF">
                                                 <rect key="frame" x="20" y="20" width="335" height="337"/>
-                                                <mutableString key="text">My name is Aymen Rebouh and I’m interested by an iOS engineering/design position starting September-October 2017.
+                                                <mutableString key="text">Hello reviewer! My name is Aymen and this is my version of the cookpad photo viewer app and I hope you'll like it.
 
-I’m currently a french computer science student in Sandwich course switching 
-between school and company every month from September 2014 to September 2017 where I work as an iOS  developer at the company.
+I'm studying computer science so I don't have any design/UX basics learned from school, so it's possible that time to time I design an experience or UI that is not that relevant for the context. Sorry for that 🤣.
 
-I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again two times, either with friends or backpacking. And I'll be there again in May 2017 ( next week ) for three weeks for holidays.
-</mutableString>
+I tried to use cookpad colors and create a photo app viewer related to food so maybe you feel connected with the app, or even gives you inspirations for the cookpad mobile apps improvements.
+
+I hope you'll like it 😋🍜.</mutableString>
                                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -93,7 +93,7 @@ I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="d26-XP-1Ur">
-                                        <rect key="frame" x="98" y="0.0" width="160" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="63"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="D8t-EO-I2u"/>
                                             <constraint firstAttribute="height" constant="63" id="QaO-xo-pwM"/>
@@ -103,7 +103,7 @@ I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="d26-XP-1Ur" firstAttribute="top" secondItem="tsy-m3-FEL" secondAttribute="top" id="CIy-c7-cje"/>
-                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="centerX" secondItem="tsy-m3-FEL" secondAttribute="centerX" id="RUp-y7-Z8u"/>
+                                    <constraint firstItem="d26-XP-1Ur" firstAttribute="leading" secondItem="tsy-m3-FEL" secondAttribute="leading" id="zP7-Hb-edh"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
@@ -217,12 +217,12 @@ I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEv-Mx-Eji">
-                                <rect key="frame" x="28" y="32" width="26" height="27"/>
+                                <rect key="frame" x="31" y="40" width="22" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="0fe-cF-SHQ"/>
-                                    <constraint firstAttribute="width" constant="26" id="DeU-nj-yVF"/>
+                                    <constraint firstAttribute="height" constant="23" id="0fe-cF-SHQ"/>
+                                    <constraint firstAttribute="width" constant="22" id="DeU-nj-yVF"/>
                                 </constraints>
-                                <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="previous"/>
                                 <connections>
                                     <segue destination="RSG-7R-YrP" kind="unwind" unwindAction="unwindWithSegue:" id="9zz-ja-aZT"/>
@@ -235,8 +235,8 @@ I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again
                             <constraint firstItem="r71-jl-eg4" firstAttribute="top" secondItem="ZUs-dd-sDe" secondAttribute="top" id="Lgb-ea-VFF"/>
                             <constraint firstAttribute="trailing" secondItem="r71-jl-eg4" secondAttribute="trailing" id="WW3-zC-Tlu"/>
                             <constraint firstItem="r71-jl-eg4" firstAttribute="leading" secondItem="ZUs-dd-sDe" secondAttribute="leading" id="cnG-gt-xOJ"/>
-                            <constraint firstItem="rEv-Mx-Eji" firstAttribute="top" secondItem="pDI-yI-kJl" secondAttribute="bottom" constant="12" id="mf2-Sq-CHa"/>
-                            <constraint firstItem="rEv-Mx-Eji" firstAttribute="leading" secondItem="ZUs-dd-sDe" secondAttribute="leadingMargin" constant="12" id="vpD-w9-zRv"/>
+                            <constraint firstItem="rEv-Mx-Eji" firstAttribute="top" secondItem="pDI-yI-kJl" secondAttribute="bottom" constant="20" id="mf2-Sq-CHa"/>
+                            <constraint firstItem="rEv-Mx-Eji" firstAttribute="leading" secondItem="ZUs-dd-sDe" secondAttribute="leadingMargin" constant="15" id="vpD-w9-zRv"/>
                         </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
@@ -285,10 +285,10 @@ I love Japan vibes : Since my first trip in Japan in 2015, I went in Japan again
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookpadLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pqE-VA-CoP">
-                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <rect key="frame" x="57.5" y="203.5" width="260" height="260"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="86q-tq-vA1"/>
-                                    <constraint firstAttribute="width" constant="300" id="px6-QC-fs2"/>
+                                    <constraint firstAttribute="height" constant="260" id="86q-tq-vA1"/>
+                                    <constraint firstAttribute="width" constant="260" id="px6-QC-fs2"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cookpadLogo"/>

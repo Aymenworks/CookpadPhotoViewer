@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,22 +23,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0i-zi-Gjr" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="431.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="421.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLu-1W-RdU">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="280"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-ay-qcA">
-                                        <rect key="frame" x="0.0" y="280" width="250" height="151.5"/>
+                                        <rect key="frame" x="0.0" y="280" width="250" height="141.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-3C-ozd">
-                                                <rect key="frame" x="20" y="40" width="210" height="29"/>
+                                                <rect key="frame" x="20" y="30" width="210" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                                 <color key="textColor" red="0.54901960780000003" green="0.6705882353" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-xo-iDQ">
-                                                <rect key="frame" x="20" y="128" width="210" height="13.5"/>
+                                                <rect key="frame" x="20" y="118" width="210" height="13.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="BY ">
                                                         <attributes>
@@ -62,7 +62,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rnz-aC-ehK">
-                                                <rect key="frame" x="15" y="79" width="220" height="38"/>
+                                                <rect key="frame" x="15" y="69" width="220" height="38"/>
                                                 <color key="tintColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -78,9 +78,7 @@
                                             <constraint firstAttribute="trailing" secondItem="hOy-xo-iDQ" secondAttribute="trailing" constant="20" id="S8V-DJ-5vP"/>
                                             <constraint firstItem="hOy-xo-iDQ" firstAttribute="top" secondItem="Rnz-aC-ehK" secondAttribute="bottom" constant="11" id="Xuu-a7-DGl"/>
                                             <constraint firstItem="Rnz-aC-ehK" firstAttribute="top" secondItem="GR7-3C-ozd" secondAttribute="bottom" constant="10" id="g7h-o9-SW8"/>
-                                            <constraint firstItem="GR7-3C-ozd" firstAttribute="top" secondItem="Pi8-ay-qcA" secondAttribute="top" constant="20" id="iuf-UA-nNo">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                            </constraint>
+                                            <constraint firstItem="GR7-3C-ozd" firstAttribute="top" secondItem="Pi8-ay-qcA" secondAttribute="top" constant="30" id="iuf-UA-nNo"/>
                                             <constraint firstItem="GR7-3C-ozd" firstAttribute="leading" secondItem="Pi8-ay-qcA" secondAttribute="leading" constant="20" id="n57-o0-YKW"/>
                                             <constraint firstAttribute="trailing" secondItem="GR7-3C-ozd" secondAttribute="trailing" constant="20" id="rYz-A5-JsU"/>
                                             <constraint firstAttribute="trailing" secondItem="Rnz-aC-ehK" secondAttribute="trailing" constant="15" id="soC-Rr-UGq"/>
